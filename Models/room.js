@@ -10,6 +10,9 @@ const RoomSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       required: true,
     },
+    image: {
+      type: String,
+    },
     createdAt: {
       type: Date,
     },
