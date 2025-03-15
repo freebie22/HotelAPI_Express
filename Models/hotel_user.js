@@ -22,6 +22,12 @@ const HotelUserSchema = new mongoose.Schema(
     isFired: {
       type: Boolean,
     },
+    isActive: {
+      type: Boolean,
+    },
+    noActivityReason: {
+      type: String,
+    },
     hotelId: {
       type: mongoose.Schema.Types.ObjectId,
     },
