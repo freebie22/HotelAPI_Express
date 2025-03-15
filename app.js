@@ -5,6 +5,11 @@ const bodyParser = require("body-parser");
 const HttpError = require("./models/http-error");
 
 const hotelUserRoutes = require("./routes/hotel_users-route");
+const hotelRoutes = require("./routes/hotel-route");
+const roomRoutes = require("./routes/room-route");
+const paymentRoutes = require("./routes/payment-route");
+const clientRoutes = require("./routes/client-route");
+const bookingRoutes = require("./routes/booking-route");
 
 const app = express();
 
@@ -22,6 +27,11 @@ app.use((req, res, next) => {
 });
 
 app.use("/hotelAPI/hotelUsers", hotelUserRoutes);
+app.use("/hotelAPI/hotels", hotelRoutes);
+app.use("/hotelAPI/rooms", roomRoutes);
+app.use("/hotelAPI/payment", paymentRoutes);
+app.use("/hotelAPI/clients", clientRoutes);
+app.use("/hotelAPI/booking", bookingRoutes);
 
 app.use((req, res, next) => {
   const error = new HttpError("No routes were found", 500);
