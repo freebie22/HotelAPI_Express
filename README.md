@@ -167,3 +167,10 @@ HotelService --> RoomService : "getRooms()"
 ```
 ### UML-діграма в PlantUML
 ![image](https://github.com/user-attachments/assets/82629a6e-72ce-4eb0-9327-91469df66056)
+# SonarQube та GitHub Actions
+## Налаштування та проходження тестів в SonarQube
+![image](https://github.com/user-attachments/assets/8ecdde7a-f60d-4c57-b3d9-7eb0f5ac76ee)
+## Успішне проходження тестів в поєднанні з GitHub Actions на прикладі файлу
+![image](https://github.com/user-attachments/assets/399a71ee-a6f4-4b55-93b5-9e8cff36043e)
+![image](https://github.com/user-attachments/assets/76336652-d25e-4d63-bd07-a9716a6c2c61)
+
