@@ -106,7 +106,7 @@ run testBooking for 3 Client, 3 Room, 5 Booking, 5 TimePeriod
 
 # 4. Верифікація моделей архітектури
 
-## UML-діаграма сервісів та взаємодії між ними у PlantUML
+## UML-діаграма сервісів та взаємодії між ними
 
 ```
 @startuml
