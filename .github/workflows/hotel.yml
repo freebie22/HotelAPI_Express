@@ -18,6 +18,14 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests and collect coverage
+        run: |
+          npm test -- --coverage
+          mv coverage/lcov.info coverage/lcov-report.info
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
         env:
@@ -28,3 +36,4 @@ jobs:
             -Dsonar.organization=freebie22
             -Dsonar.sources=.
             -Dsonar.host.url=https://sonarcloud.io
+            -Dsonar.javascript.lcov.reportPaths=coverage/lcov-report.info
